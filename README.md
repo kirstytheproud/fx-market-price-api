@@ -22,11 +22,17 @@ This was created using the following tech stack:
   
   # Testing
   I created separate test files for the PriceController and PriceService
- Unit Testing was done with JUnit to test the following cases:
+  <br>
+  I attempted to use Mockito as part of my testing process, but this created many errors. Mockito appears to be used with dummy/mock data, but in this case I already had data to use and test. Due to time constraints I removed my Mockito code to keep my code clean, and chose to do continue my unit tests in JUnit. Unit Testing was done with JUnit to test the following cases:
  <li> That prices are being processed in sequence and none are missing
  <li> That only the latest price for a given instrument is stored (and client can not see older prices)
   <li> Each price is validated to ensure that bid < ask and that the commission has been applied correctly
     
- Integration Testing done with Postman to ensure that all REST endpoints work effectively.
+ Integration Testing done with Postman to ensure that all REST endpoints worked effectively.
+                                                                                                              
+ Proposed strategy for E2E testing:
+ For E2E automation testing I think Mockito and Selenium would be the right test automation frameworks to use. Can be used to automate the Mockito tests, and automate the Postman tests without us having to manually do it each time the API code is altered.
+                                                       
+ 
                                                        
  
