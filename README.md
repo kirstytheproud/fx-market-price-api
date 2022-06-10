@@ -1,5 +1,6 @@
 # FX Market Price Handler API
-# Brief
+# Overview
+This API was created with the assumption it would be linked up with a user interface for users to retrieve only the latest prices of selected instruments/currencies from a Foreign Exchange price feed and to be able to store them to access later. This API parses CSV data of various prices and modifies them accordingly by adding a margin adjustment to the bid prices and ask prices.  
 
 
 This was created using the following tech stack:
@@ -30,9 +31,8 @@ This was created using the following tech stack:
     
  Integration Testing done with Postman to ensure that all REST endpoints worked effectively.
                                                                                                               
- Proposed strategy for E2E testing:
- For E2E automation testing I think Mockito and Selenium would be the right test automation frameworks to use. Can be used to automate the Mockito tests, and automate the Postman tests without us having to manually do it each time the API code is altered.
-                                                       
- 
-                                                       
+ <br>Proposed strategy for E2E testing:<b>
+    
+ For E2E automation testing I think Mockito and Postman would be ideal test automation frameworks to use. Mockito can be used to automate all unit tests with mock data and mock objects. Postman can be used to automate the integration testing of the API so that removes the task of always manually refreshing Postman each time the API is altered. With API testing we need to analyze certain factors when sending the request and retrieving a response, such as data accuracy, HTTP status codes, response times, error codes in case the API returns any errors, and authorization checks. Spring Boot itself also the option to integrate Selenium for automation testing. Selenium is primarily used for web automation so this would be used when the entire FX trading application has been fully completed with both the API and the frontend user interface. 
+                                                                                                            
  
