@@ -35,7 +35,7 @@ This was created using the following tech stack:
     <br>
  For E2E automation testing I think Mockito and Postman would be ideal test automation frameworks to use. Mockito can be used to automate all unit tests with mock data and mock objects. Postman can be used to automate the integration testing of the API so that removes the task of always manually refreshing Postman each time the API is altered. With API testing we need to analyze certain factors when sending the request and retrieving a response, such as data accuracy, HTTP status codes, response times, error codes in case the API returns any errors, and authorization checks. Spring Boot itself also the option to integrate Selenium for automation testing. Selenium is primarily used for web automation so this would be used when the entire FX trading application has been fully completed with both the API and the frontend user interface. 
     
-    # Possible Improvements
+    <b> Possible Improvements </b>
     I would have liked to use Mockito effectively for my unit testing and would have liked to make my API more RESTful, to effectively handle responses, requests and any errors with HTTP status codes.
                                                                                                             
  
