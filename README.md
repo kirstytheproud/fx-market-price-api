@@ -13,7 +13,7 @@ This was created using the following tech stack:
 
             
 # Process
- <li> Following the MVC framework I separated my methods into a Price Class, PriceController, PriceService and PriceRepository. 
+ <li> Following the Model-View-Controller (MVC) design pattern I separated my methods into a Price Class, PriceController, PriceService and PriceRepository. 
    <li>In the PriceService I have a methods that parse CSV data of various currencies/instruments into Price objects and adjusts incoming prices with a commission. The commission is as follows:(-0.1% for bid price, +0.1% for ask price) All prices are rounded up to 4 decimal places.
 <li>The PriceController uses different REST endpoints to retrieve only the latest price according to each instrument name.
 <br>
